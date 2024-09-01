@@ -1,6 +1,6 @@
-**Personal install notes for Arch using archinstall.**
+# **Personal install notes for Arch using archinstall.**
 
-Desktop Install
+## Desktop Install
 
 -Boot Arch ISO
 
