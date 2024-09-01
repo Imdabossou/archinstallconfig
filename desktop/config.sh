@@ -17,11 +17,6 @@ sudo systemctl enable libvirtd
 sudo systemctl enable dnsmasq
 # Printer services
 sudo systemctl enable cups.service
-# Download and apply KDE Plasma theme
-# konsave would be used for CLI profile import but it does not support KDE Plasma 6... Removed until updated
-#curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
-#konsave -i konsave.knsv
-#konsave -a konsave
 # Download monitor ICM profile while still in /home
 curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
 # Apply Nvidia fixes
