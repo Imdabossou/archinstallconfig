@@ -1,5 +1,5 @@
 # Remember to su into user account made in archinstall
-cd /home
+cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install packages from Yay
