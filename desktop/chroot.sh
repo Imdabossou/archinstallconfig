@@ -1,7 +1,7 @@
 # Swap user for makepkg
 su jamie
 # Install Yay
-yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes| makepkg -si
+yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install packages from Yay
 yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance konsave
 # Configure btrfs subvolumes
