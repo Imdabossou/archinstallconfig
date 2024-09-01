@@ -6,10 +6,10 @@ yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.
 yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance
 # Configure btrfs subvolumes
 sudo snapper -c root create-config /
-sudo snapper -c home create-config /home
 sudo mkdir /.snapshots
 sudo mount -a
 sudo btrfs subvol set-default 256 /
+sudo systemctl enable grub-btrfsd.service
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 sudo systemctl enable dnsmasq
