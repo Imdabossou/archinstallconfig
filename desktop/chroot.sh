@@ -12,9 +12,6 @@ sudo mount -a
 sudo btrfs subvol set-default 256 /
 # QEMU virtualization services
 sudo systemctl enable libvirtd
-sudo systemctl start libvirtd
 sudo systemctl enable dnsmasq
-sudo systemctl start dnsmasq
 # Printer services
 sudo systemctl enable cups.service
-sudo systemctl start cups.service
