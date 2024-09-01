@@ -9,6 +9,6 @@ Desktop Install
 > archinstall --config https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/install.json
 
 -After install choose Y to enter chroot of new installation & swap to user account
-> Su user
+> su user
 
 > curl -sL https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/chroot.sh | bash
