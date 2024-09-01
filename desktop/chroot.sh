@@ -26,4 +26,4 @@ cd /etc/modprobe.d/
 sudo curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/nvidiadesktop.conf
 # Apply SDDM Wayland
 cd /etc/sddm.conf.d/
-sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/10-wayland.conf
+sudo curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/10-wayland.conf
