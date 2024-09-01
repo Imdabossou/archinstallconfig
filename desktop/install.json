@@ -121,7 +121,8 @@
         "virt-manager",
         "dnsmasq",
         "openrgb",
-        "timeshift"
+        "timeshift",
+        "xorg-xhost"
     ],
     "parallel downloads": 5,
     "profile_config": {
