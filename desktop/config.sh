@@ -2,8 +2,8 @@
 cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
-# Install packages from Yay
-yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance
+# Install fast packages from Yay
+yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance
 # Configure btrfs subvolumes
 sudo snapper -c root create-config /
 sudo snapper -c home create-config /home
@@ -31,3 +31,5 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10
 # Download Background
 cd ~/Pictures
 sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg.png
+# Install slow packages from Yay
+yes | yay -S bolt-launcher orca-slicer-bin protonup-qt 
