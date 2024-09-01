@@ -4,13 +4,9 @@ cd ~
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install fast packages from Yay
 yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware 
-#btrfs-assistant snapper-support btrfsmaintenance
-# Configure btrfs subvolumes
-#sudo snapper -c root create-config /
-#sudo mkdir /.snapshots
-#sudo mount -a
-#sudo btrfs subvol set-default 256 /
+# Configure Grub Snapshots
 sudo systemctl enable grub-btrfsd.service
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 # THE ROOT DEVICE ISN'T CONFIGURED TO BE READ WRITE. SNAPSHOTS CURRENTLY BROKEN. Mounting by subvoloid too needs to be fixed. Moving to Timeshift.
 # QEMU virtualization services
 sudo systemctl enable libvirtd
