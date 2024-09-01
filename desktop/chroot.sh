@@ -16,14 +16,14 @@ sudo systemctl enable dnsmasq
 # Printer services
 sudo systemctl enable cups.service
 # Download and apply KDE Plasma theme
-curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/konsave.knsv
+curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
 konsave -i konsave.knsv
 konsave -a konsave
 # Download monitor ICM profile while still in /home
-curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/EX240N.icm
+curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
 # Apply Nvidia fixes
 cd /etc/modprobe.d/
-sudo curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/nvidiadesktop.conf
+sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/nvidiadesktop.conf
 # Apply SDDM Wayland
 cd /etc/sddm.conf.d/
-sudo curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/10-wayland.conf
+sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10-wayland.conf
