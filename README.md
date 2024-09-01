@@ -11,4 +11,4 @@
 -After install choose Y to enter chroot of new installation & swap to user account
 > su user
 
-> curl -sL https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/chroot.sh | bash
+> curl -sL https://github.com/imdabossou/archinstallconfig/raw/main/desktop/chroot.sh | bash
