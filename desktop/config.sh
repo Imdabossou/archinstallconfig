@@ -3,14 +3,15 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install fast packages from Yay
-yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance
+yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware 
+#btrfs-assistant snapper-support btrfsmaintenance
 # Configure btrfs subvolumes
-sudo snapper -c root create-config /
-sudo mkdir /.snapshots
-sudo mount -a
-sudo btrfs subvol set-default 256 /
+#sudo snapper -c root create-config /
+#sudo mkdir /.snapshots
+#sudo mount -a
+#sudo btrfs subvol set-default 256 /
 sudo systemctl enable grub-btrfsd.service
-# THE ROOT DEVICE ISN'T CONFIGURED TO BE READ WRITE. SNAPSHOTS CURRENTLY BROKEN. Mounting by subvoloid too needs to be fixed.
+# THE ROOT DEVICE ISN'T CONFIGURED TO BE READ WRITE. SNAPSHOTS CURRENTLY BROKEN. Mounting by subvoloid too needs to be fixed. Moving to Timeshift.
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 sudo systemctl enable dnsmasq
