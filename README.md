@@ -10,4 +10,4 @@
 
 -After install reboot and login
 
-> curl -sL https://github.com/imdabossou/archinstallconfig/raw/main/desktop/chroot.sh | bash
+> curl -sL https://github.com/imdabossou/archinstallconfig/raw/main/desktop/config.sh | bash
