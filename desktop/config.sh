@@ -10,6 +10,7 @@ sudo mkdir /.snapshots
 sudo mount -a
 sudo btrfs subvol set-default 256 /
 sudo systemctl enable grub-btrfsd.service
+# THE ROOT DEVICE ISN'T CONFIGURED TO BE READ WRITE. SNAPSHOTS CURRENTLY BROKEN. Mounting by subvoloid too needs to be fixed.
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 sudo systemctl enable dnsmasq
