@@ -1,3 +1,5 @@
+# Swap user for makepkg
+su jamie
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes| makepkg -si
 # Install packages from Yay
