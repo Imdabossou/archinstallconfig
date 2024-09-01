@@ -3,7 +3,7 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install packages from Yay
-yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance konsave
+yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance savedesktop
 # Configure btrfs subvolumes
 sudo snapper -c root create-config /
 sudo snapper -c home create-config /home
@@ -16,9 +16,12 @@ sudo systemctl enable dnsmasq
 # Printer services
 sudo systemctl enable cups.service
 # Download and apply KDE Plasma theme
-curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
-konsave -i konsave.knsv
-konsave -a konsave
+curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/savedesktop.sd.tar.gz
+echo Manually import file using savedesktop
+# konsave would be used for CLI profile import but it does not support KDE Plasma 6. Removed until updated. Swapped to savedesktop instead, which works but is manual through GUI
+#curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
+#konsave -i konsave.knsv
+#konsave -a konsave
 # Download monitor ICM profile while still in /home
 curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
 # Apply Nvidia fixes
