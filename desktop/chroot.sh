@@ -16,7 +16,7 @@ sudo systemctl enable dnsmasq
 # Printer services
 sudo systemctl enable cups.service
 # Download and apply KDE Plasma theme
-curl -O https://github.com/imdabossou/archinstallconfig/tree/main/desktop/konsave.knsv
+curl -O https://github.com/imdabossou/archinstallconfig/blob/main/desktop/konsave.knsv
 konsave -i konsave.knsv
 konsave -a konsave
 # Download monitor ICM profile while still in /home
