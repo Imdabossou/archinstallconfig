@@ -120,7 +120,8 @@
         "qemu-full",
         "virt-manager",
         "dnsmasq",
-        "openrgb"
+        "openrgb",
+        "timeshift"
     ],
     "parallel downloads": 5,
     "profile_config": {
