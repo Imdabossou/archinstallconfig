@@ -2,8 +2,8 @@
 su jamie
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
-# Install quick packages from Yay
-yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance konsave
+# Install packages from Yay
+yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware btrfs-assistant snapper-support btrfsmaintenance konsave
 # Configure btrfs subvolumes
 sudo snapper -c root create-config /
 sudo snapper -c home create-config /home
@@ -27,5 +27,3 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 # Apply SDDM Wayland
 cd /etc/sddm.conf.d/
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/10-wayland.conf
-# Install slow packages from Yay
-yes | yay -S bolt-launcher orca-slicer-bin protonup-qt
