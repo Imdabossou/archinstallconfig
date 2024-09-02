@@ -6,7 +6,7 @@ desktop/config.sh - konsave removed due to issues
 #konsave -i konsave.knsv
 #konsave -a konsave
 
-Timeshift - 
+Timeshift - issues if not configured before use
 
 @home subvolume not included in snapshots by default
 
