@@ -5,7 +5,7 @@ yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.
 # Install fast packages from Yay
 yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware 
 # Configure Grub Snapshots STILL NEEDS WORK
-sudo systemctl enable grub-btrfsd.service
+sudo systemctl enable grub-btrfsd
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 # QEMU virtualization services
 sudo systemctl enable libvirtd
