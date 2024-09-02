@@ -8,7 +8,7 @@ desktop/config.sh - konsave removed due to issues
 
 Timeshift - 
 
-@home subvolume not included by default
+@home subvolume not included in snapshots by default
 
 sudo nano/etc/fstab - remove any instances of subvoloid. restoring into snapshat using subvoloid results in a dead system
 
