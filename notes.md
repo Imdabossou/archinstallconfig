@@ -12,4 +12,4 @@
 ### @home subvolume not included in snapshots by default
 -sudo nano/etc/fstab - remove any instances of subvolid. restoring into snapshat using subvolid results in a dead system
 -sudo systemctl edit --full grub-btrfsd - ExecStart= must be edited to @ directory as it is wrong for Timeshift / archinstall default subvolumes
--STILL read only as well. Read / Write Grub snapshoot boot still needs fixing
+-Read only issue when booting snapshots from Grub.
