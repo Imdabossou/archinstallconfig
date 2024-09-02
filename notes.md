@@ -5,3 +5,10 @@ desktop/config.sh - konsave removed due to issues
 #curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
 #konsave -i konsave.knsv
 #konsave -a konsave
+
+Timeshift - 
+
+@home subvolume not included by default
+
+sudo nano/etc/fstab - remove any instances of subvoloid. restoring into snapshat using subvoloid results in a dead system
+
