@@ -1,14 +1,15 @@
-desktop/config.sh - konsave removed due to issues
+# notes
+## desktop/config.sh - konsave removed due to issues
 
-#Download and apply KDE Plasma theme
+### #Download and apply KDE Plasma theme
 #konsave would be used for CLI profile import but it does not support KDE Plasma 6... Removed until updated
 #curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/konsave.knsv
 #konsave -i konsave.knsv
 #konsave -a konsave
 
-Timeshift - issues if not configured before use
+## Timeshift - issues if not configured before use
 
-@home subvolume not included in snapshots by default
-
-sudo nano/etc/fstab - remove any instances of subvolid. restoring into snapshat using subvolid results in a dead system
-
+### @home subvolume not included in snapshots by default
+-sudo nano/etc/fstab - remove any instances of subvolid. restoring into snapshat using subvolid results in a dead system
+-sudo systemctl edit --full grub-btrfsd - ExecStart= must be edited to @ directory as it is wrong for Timeshift / archinstall default subvolumes
+-STILL read only as well. Read / Write Grub snapshoot boot still needs fixing
