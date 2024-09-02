@@ -10,5 +10,5 @@ Timeshift - issues if not configured before use
 
 @home subvolume not included in snapshots by default
 
-sudo nano/etc/fstab - remove any instances of subvoloid. restoring into snapshat using subvoloid results in a dead system
+sudo nano/etc/fstab - remove any instances of subvolid. restoring into snapshat using subvolid results in a dead system
 
