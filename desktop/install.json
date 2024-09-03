@@ -122,7 +122,7 @@
         "dnsmasq",
         "openrgb",
         "timeshift",
-        "xorg-xhost"
+        "filelight"
     ],
     "parallel downloads": 5,
     "profile_config": {
