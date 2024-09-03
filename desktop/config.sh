@@ -23,7 +23,6 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg
 yes | yay -S bolt-launcher orca-slicer-bin protonup-qt 
 # Remove subvolid on btrfs mounts as it breaks restores
 sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
-sed -i '/subvolid=[0-9]*/s/,subvolid=[0-9]*//g' /etc/fstab
 # Create snapper configs
 sudo snapper -c root create-config /
 sudo snapper -c home create-config /home
