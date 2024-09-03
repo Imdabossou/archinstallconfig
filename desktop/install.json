@@ -119,7 +119,8 @@
         "dnsmasq",
         "openrgb",
         "filelight",
-        "discord"
+        "discord",
+        "snapper"
     ],
     "parallel downloads": 5,
     "profile_config": {
