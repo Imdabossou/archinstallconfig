@@ -144,7 +144,8 @@
         "snapper",
         "fish",
         "gwenview",
-        "krdp"
+        "krdp",
+        "xorg-xhost"
     ],
     "parallel downloads": 5,
     "profile_config": {
