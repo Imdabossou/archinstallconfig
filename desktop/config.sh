@@ -21,8 +21,11 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10
 cd ~/Pictures
 sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg.png
 # Install optional packages from Yay (separated and commented out for now for quicker testing runs of script)
-# yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin
+#yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
 sed -i 's/consolefont//g' /etc/mkinitcpio.conf
+
+# Restart to apply changes
+#sudo restart now
