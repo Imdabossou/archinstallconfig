@@ -26,7 +26,7 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
-sed -i 's/consolefont//g' /etc/mkinitcpio.conf
+sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
 #Fix BTRFS config conflict from archinstall and start snapshots
 sudo umount /.snapshots
 sudo rm -r /.snapshots
