@@ -28,6 +28,7 @@ sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
 sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
 #Fix BTRFS config conflict from archinstall and start snapshots
+#SWAP OUT FOR TIMESHIFT CONFIG IF IT WORKS
 sudo umount /.snapshots
 sudo rm -r /.snapshots
 sudo snapper -c root create-config /
