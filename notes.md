@@ -7,6 +7,10 @@
 #konsave -i konsave.knsv
 #konsave -a konsave
 
+## DNSMASQ DISABLED
+#If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own instance
+sudo systemctl enable dnsmasq
+
 ## Timeshift - issues if not configured before use
 
 ### @home subvolume not included in snapshots by default
