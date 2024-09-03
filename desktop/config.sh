@@ -24,3 +24,5 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg
 # yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
+# Remove consolefont hook to stop error for missing config
+sed -i 's/consolefont//g' /etc/mkinitcpio.conf
