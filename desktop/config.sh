@@ -9,7 +9,6 @@ sudo systemctl enable grub-btrfsd
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 # QEMU virtualization services
 sudo systemctl enable libvirtd
-sudo systemctl enable dnsmasq
 # Printer services
 sudo systemctl enable cups.service
 # Download monitor ICM profile while still in /home
