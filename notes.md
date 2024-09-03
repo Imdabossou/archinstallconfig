@@ -63,6 +63,9 @@ curl -O (download link to fixed default.json)
 
 sudo timeshift --btrfs
 
+systemctl enable cronie.service
+
+still requires btrfs defaults from archinstall otherwise fstab has to be edited which is a pain and waste of time
 
 
 
