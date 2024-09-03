@@ -31,3 +31,39 @@ btrfs-grub removed as I don't see the point of booting into a snapshot when it c
 
 ## BTRFS  - needs configuring
 Currently trying snapper, unsure on using snapper or timeshift yet.
+
+
+### SNAPPER requires some jank following up from archinstall subvolumes. Requires a build from AUR for GUI and has no dark mode.
+sudo umount /.snapshots
+
+sudo rm -r /.snapshots
+
+sudo snapper -c root create-config /
+
+sudo snapper -c home create-config /home
+
+sudo btrfs subvolume delete /.snapshots
+
+sudo mkdir /.snapshots
+
+sudo mount -a
+
+sudo systemctl start snapper-timeline
+
+sudo systemctl start snapper-cleanup
+
+
+### TIMESHIFT requires copying config file into /etc/timeshift - (below script is unfinished). NO AUR and small file. dark mode. may require xorg-xhost 
+
+sudo pacman -S timeshift
+
+rm /etc/timeshift/default.json
+
+curl -O (download link to fixed default.json)
+
+sudo timeshift --btrfs
+
+
+
+
+
