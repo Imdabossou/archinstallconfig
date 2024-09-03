@@ -3,7 +3,7 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
-yes | yay -S jamesdsp-pipewire-bin partitionmanager mkinitcpio-firmware
+yes | yay -S btrfs-assistant partitionmanager mkinitcpio-firmware
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 # Printer services
@@ -20,9 +20,6 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10
 cd ~/Pictures
 sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg.png
 # Install optional packages from Yay (separated and commented out for now for quicker testing runs of script)
-# yes | yay -S bolt-launcher orca-slicer-bin protonup-qt 
+# yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
-# Create snapper configs
-sudo snapper -c root create-config /
-sudo snapper -c home create-config /home
