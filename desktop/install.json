@@ -122,7 +122,8 @@
         "dnsmasq",
         "openrgb",
         "timeshift",
-        "filelight"
+        "filelight",
+        "discord"
     ],
     "parallel downloads": 5,
     "profile_config": {
