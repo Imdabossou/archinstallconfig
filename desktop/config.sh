@@ -26,6 +26,14 @@ sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
 sed -i 's/consolefont//g' /etc/mkinitcpio.conf
-
+#Fix BTRFS config conflict from archinstall and start snapshots
+sudo umount /.snapshots
+sudo rm -r /.snapshots
+sudo snapper -c root create-config /
+sudo btrfs subvolume delete /.snapshots
+sudo mkdir /.snapshots
+sudo mount -a
+sudo systemctl start snapper-timeline
+sudo systemctl start snapper-cleanup
 # Restart to apply changes
 #sudo restart now
