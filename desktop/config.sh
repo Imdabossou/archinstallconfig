@@ -19,7 +19,7 @@ cd /etc/sddm.conf.d/
 sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10-wayland.conf
 # Download Background
 cd ~/Pictures
-sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/bg.png
+sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/bg.png
 # Install optional packages from Yay (separated and commented out for now for quicker testing runs of script)
 #yes | yay -S bolt-launcher orca-slicer-bin protonup-qt jamesdsp-pipewire-bin
 # Remove subvolid on btrfs mounts as it breaks restores
