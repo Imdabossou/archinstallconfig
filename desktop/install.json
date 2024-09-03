@@ -143,7 +143,8 @@
         "discord",
         "snapper",
         "fish",
-        "gwenview"
+        "gwenview",
+        "krdp"
     ],
     "parallel downloads": 5,
     "profile_config": {
