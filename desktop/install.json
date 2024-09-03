@@ -141,11 +141,10 @@
         "openrgb",
         "filelight",
         "discord",
-        "snapper",
+        "timeshift",
         "fish",
         "gwenview",
-        "krdp",
-        "xorg-xhost"
+        "krdp"
     ],
     "parallel downloads": 5,
     "profile_config": {
