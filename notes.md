@@ -13,17 +13,15 @@ konsave would be used for CLI profile import but it does not support KDE Plasma 
 If konsave is not fixed, will make a KDE theme. For the time being just set theme manually. Set bg.png as Wallpaper image for KDE, and then set under Screen Locking -> Configure Appearance. Click user account icon to change to Icon.png. Set Colors & Themes to Breeze Dark. Right click Taskbar ->Show Panel Configuration -> Set Position > Top Arrow. Remove Discover from Taskbar shortcuts and Favourites. Login Screen (SDDM) -> Apply Plasma Settings.
 
 ## DNSMASQ DISABLED
-If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own instance
+If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own instance.
 
 
 #sudo systemctl enable dnsmasq 
 
-## Timeshift - issues if not configured before use
+## BTRFS
+Removed any instances of subvolid from /etc/fstab. Restoring into snapshat using subvolid can result in a dead system.
 
-### @home subvolume not included in snapshots by default
--sudo nano/etc/fstab - remove any instances of subvolid. restoring into snapshat using subvolid results in a dead system
--sudo systemctl edit --full grub-btrfsd - ExecStart= must be edited to @ directory as it is wrong for Timeshift / archinstall default subvolumes
--Read only issue when booting snapshots from Grub.
+btrfs-grub removed as I don't see the point of booting into a snapshot when it can be restored by command.
 
 
 # todo
@@ -31,11 +29,5 @@ If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own 
 ## Finish laptop section
 ### yay asusctl yay rog-control-center
 
-## Ensure BTRFS snapshots work. Testing with Timeshift first and then snapper
-### GRUB BTFS snapshots with Timeshift are not working at the moment. Boot from Grub states read-only. Eventually breaks arch.
-### Timeshift does not use arch directories out the box. Can try snapper
-> (NO default subvolumes in archinstall)
-> (WHILE IN CHROOT FROM INSTALL)
->  mk dir ./snapshots
->  snapper -c config create-config /
-> To finish above
+## BTRFS  - needs configuring
+Currently trying snapper, unsure on using snapper or timeshift yet.
