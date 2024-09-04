@@ -26,7 +26,7 @@ btrfs-grub removed as I don't see the point of booting into a snapshot when it c
 
 # todo
 
-## Finish laptop section
+## Finish laptop section (after desktop is done)
 ### yay asusctl yay rog-control-center
 
 ## BTRFS  - needs configuring
