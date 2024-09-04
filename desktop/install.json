@@ -144,7 +144,8 @@
         "timeshift",
         "fish",
         "gwenview",
-        "krdp"
+        "krdp",
+        "spectacle"
     ],
     "parallel downloads": 5,
     "profile_config": {
