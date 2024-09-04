@@ -36,4 +36,4 @@ sudo systemctl enable cronie
 # Restart to apply changes (disabled until script completed)
 #exit (1st time leave su)
 #exit (2nd time leave chroot)
-#sudo restart now
+#reboot now
