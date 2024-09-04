@@ -34,6 +34,11 @@ Currently trying snapper, unsure on using snapper or timeshift yet.
 
 
 ### SNAPPER requires some jank following up from archinstall subvolumes. Requires a build from AUR for GUI and has no dark mode.
+
+(snapper in main repo installed with main install.json)
+
+yay -S btrfs-assistant
+
 sudo umount /.snapshots
 
 sudo rm -r /.snapshots
@@ -53,19 +58,17 @@ sudo systemctl start snapper-timeline
 sudo systemctl start snapper-cleanup
 
 
-### TIMESHIFT requires copying config file into /etc/timeshift - (below script is unfinished). NO AUR and small file. dark mode. may require xorg-xhost 
+### TIMESHIFT requires copying config file into /etc/timeshift. NO AUR and small file. dark mode. may require xorg-xhost. Works with archinstall subvolumes.
 
-sudo pacman -S timeshift
+cd /etc/timeshift
 
-rm /etc/timeshift/default.json
+sudo rm /etc/timeshift/default.json
 
-curl -O (download link to fixed default.json)
+curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
 
 sudo timeshift --btrfs
 
 systemctl enable cronie.service
-
-still requires btrfs defaults from archinstall otherwise fstab has to be edited which is a pain and waste of time
 
 
 
