@@ -27,16 +27,11 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
 sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
-#Fix BTRFS config conflict from archinstall and start snapshots
-#SWAP OUT FOR TIMESHIFT CONFIG IF IT WORKS
-sudo umount /.snapshots
-sudo rm -r /.snapshots
-sudo snapper -c root create-config /
-sudo snapper -c home create-config /home
-sudo btrfs subvolume delete /.snapshots
-sudo mkdir /.snapshots
-sudo mount -a
-sudo systemctl start snapper-timeline
-sudo systemctl start snapper-cleanup
-# Restart to apply changes
+# Timeshift Config
+cd /etc/timeshift
+sudo rm /etc/timeshift/default.json
+curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
+sudo timeshift --btrfs
+systemctl enable cronie
+# Restart to apply changes (disabled until script completed)
 #sudo restart now
