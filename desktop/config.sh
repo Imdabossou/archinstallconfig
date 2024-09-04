@@ -34,5 +34,6 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 sudo timeshift --btrfs
 sudo systemctl enable cronie
 # Restart to apply changes (disabled until script completed)
-#exit
+#exit (1st time leave su)
+#exit (2nd time leave chroot)
 #sudo restart now
