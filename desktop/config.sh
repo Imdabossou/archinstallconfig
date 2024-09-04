@@ -30,7 +30,7 @@ sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
 # Timeshift Config
 cd /etc/timeshift
 sudo rm /etc/timeshift/default.json
-curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
+so curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
 sudo timeshift --btrfs
 systemctl enable cronie
 # Restart to apply changes (disabled until script completed)
