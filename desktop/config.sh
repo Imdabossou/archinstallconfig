@@ -33,7 +33,9 @@ sudo rm /etc/timeshift/default.json
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
 sudo timeshift --btrfs
 sudo systemctl enable cronie
+# Leave su
+exit
+# Leave chroot
+exit
 # Restart to apply changes (disabled until script completed)
-exit (1st time leave su)
-exit (2nd time leave chroot)
 reboot now
