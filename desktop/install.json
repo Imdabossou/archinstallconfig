@@ -145,7 +145,11 @@
         "fish",
         "gwenview",
         "krdp",
-        "spectacle"
+        "spectacle",
+        "ktorrent",
+        "kcalc",
+        "piper",
+        "ksystemlog"
     ],
     "parallel downloads": 5,
     "profile_config": {
