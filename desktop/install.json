@@ -149,7 +149,8 @@
         "ktorrent",
         "kcalc",
         "piper",
-        "ksystemlog"
+        "ksystemlog",
+        "duperemove"
     ],
     "parallel downloads": 5,
     "profile_config": {
