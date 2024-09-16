@@ -150,7 +150,8 @@
         "kcalc",
         "piper",
         "ksystemlog",
-        "duperemove"
+        "duperemove",
+        "powertop"
     ],
     "parallel downloads": 5,
     "profile_config": {
