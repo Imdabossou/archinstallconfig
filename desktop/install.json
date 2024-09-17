@@ -150,7 +150,9 @@
         "piper",
         "ksystemlog",
         "duperemove",
-        "powertop"
+        "powertop",
+        "freerdp",
+        "remmina"
     ],
     "parallel downloads": 5,
     "profile_config": {
