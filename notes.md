@@ -29,47 +29,9 @@ btrfs-grub removed as I don't see the point of booting into a snapshot when it c
 ## Finish laptop section (after desktop is done)
 ### yay asusctl yay rog-control-center
 
-## BTRFS  - needs configuring
-Currently trying snapper, unsure on using snapper or timeshift yet.
+### Konsole Fish Default
 
-
-### SNAPPER requires some jank following up from archinstall subvolumes. Requires a build from AUR for GUI and has no dark mode.
-
-(snapper in main repo installed with main install.json)
-
-yay -S btrfs-assistant
-
-sudo umount /.snapshots
-
-sudo rm -r /.snapshots
-
-sudo snapper -c root create-config /
-
-sudo snapper -c home create-config /home
-
-sudo btrfs subvolume delete /.snapshots
-
-sudo mkdir /.snapshots
-
-sudo mount -a
-
-sudo systemctl start snapper-timeline
-
-sudo systemctl start snapper-cleanup
-
-
-### TIMESHIFT requires copying config file into /etc/timeshift. NO AUR and small file. dark mode. may require xorg-xhost. Works with archinstall subvolumes.
-
-cd /etc/timeshift
-
-sudo rm /etc/timeshift/default.json
-
-curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
-
-sudo timeshift --btrfs
-
-systemctl enable cronie.service
-
-
+In Konsole, settings, configure Konsole,
+then profile, Edit, Command : /usr/bin/fish
 
 
