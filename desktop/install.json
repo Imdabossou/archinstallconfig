@@ -118,7 +118,6 @@
     "offline": false,
     "packages": [
         "firefox",
-        "nvidia",
         "power-profiles-daemon",
         "steam",
         "fwupd",
