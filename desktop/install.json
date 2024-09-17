@@ -153,7 +153,8 @@
         "steam",
         "system-config-printer",
         "timeshift",
-        "virt-manager"
+        "virt-manager",
+        "gwenview"
     ],
     "parallel downloads": 5,
     "profile_config": {
