@@ -152,7 +152,8 @@
         "duperemove",
         "powertop",
         "freerdp",
-        "remmina"
+        "remmina",
+        "liquidctl"
     ],
     "parallel downloads": 5,
     "profile_config": {
