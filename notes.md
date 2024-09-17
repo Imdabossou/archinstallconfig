@@ -23,6 +23,8 @@ Removed any instances of subvolid from /etc/fstab. Restoring into snapshat using
 
 btrfs-grub removed as I don't see the point of booting into a snapshot when it can be restored by command.
 
+Snapshots completed with Timeshift.
+
 
 # todo
 
