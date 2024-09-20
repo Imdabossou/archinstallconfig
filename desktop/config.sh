@@ -30,6 +30,7 @@ sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
 # Virtual 5.1 Upmix Audio
 cd /usr/share/pipewire/pipewire.conf.d/
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/refs/heads/main/desktop/25-sink-upmix-5.1.conf
+systemctl --user restart pipewire.service
 # Timeshift Config
 cd /etc/timeshift
 sudo rm /etc/timeshift/default.json
