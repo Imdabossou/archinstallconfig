@@ -11,4 +11,4 @@ __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/50_mesa.json WEBKIT
 
 # todo
 ## Finish laptop section (after desktop is done)
-### yay asusctl yay rog-control-center
+yay asusctl yay rog-control-center
