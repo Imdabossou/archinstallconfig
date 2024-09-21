@@ -1,5 +1,4 @@
 # notes
-## desktop/config.sh
 
 ## DNSMASQ DISABLED
 If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own instance.
