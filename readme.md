@@ -6,6 +6,10 @@
 
 -Connect to Network
 
+> iwctl
+
+> station wlan0 connect 'SSID HERE'
+
 > archinstall --config https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/install.json
 
 -After install reboot and login
