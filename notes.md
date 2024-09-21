@@ -15,7 +15,5 @@ Snapshots completed with Timeshift.
 
 
 # todo
-
-
 ## Finish laptop section (after desktop is done)
 ### yay asusctl yay rog-control-center
