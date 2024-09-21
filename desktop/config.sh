@@ -18,11 +18,7 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 sudo mkdir /etc/sddm.conf.d/
 cd /etc/sddm.conf.d/
 sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10-wayland.conf
-# Download Background and icon
-# cd ~/Pictures
-# sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/bg.png
-# sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/icon.png
-# KONSAVE TEST IMPORT KDE
+# Konsave KDE config import - if wallpaper and icon does not apply, they are located in ~/.local/share/wallpapers and /.local/share/icons
 cd ~/
 curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/arch.knsv
 konsave -i arch.knsv
