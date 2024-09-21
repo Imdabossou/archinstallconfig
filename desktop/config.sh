@@ -8,7 +8,8 @@ yes | yay -S partitionmanager mkinitcpio-firmware
 sudo systemctl enable libvirtd
 # Printer services
 sudo systemctl enable cups.service
-# Download monitor ICM profile while still in /home
+# Download monitor ICM profile
+cd ~/Documents/
 curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
 # Apply Nvidia fixes
 cd /etc/modprobe.d/
