@@ -1,4 +1,4 @@
-# Remember to su into user account made in archinstall if running script in chroot
+# Does not work when run in chroot
 cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
