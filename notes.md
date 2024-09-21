@@ -1,5 +1,10 @@
 # notes
 
+## Konsave working in VM
+Konsave is now working in tests, so I am using this again to copy over KDE config.
+Wallpapers and Icon are brought over if stored in ~/.local/share/wallpapers and ~/.local/share/icons but I am unsure if they apply automatically.
+
+
 ## DNSMASQ DISABLED
 If dnsmasq starts automatically it breaks qemu/kvm as it needs to start its own instance.
 
