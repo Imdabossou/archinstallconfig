@@ -16,10 +16,6 @@ Snapshots completed with Timeshift.
 
 # todo
 
-### Konsole Fish Default
-
-In Konsole, settings, configure Konsole,
-then profile, Edit, Command : /usr/bin/fish
 
 ## Finish laptop section (after desktop is done)
 ### yay asusctl yay rog-control-center
