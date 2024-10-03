@@ -29,7 +29,7 @@ cd ~/.config/OpenRGB/
 curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/OpenRGB.json
 curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/Profile.orp
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
-yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin whatsie
+yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin zapzap
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
