@@ -1,6 +1,7 @@
 {
     "additional-repositories": [
-        "multilib"
+        "multilib",
+        "extra"
     ],
     "archinstall-language": "English",
     "audio_config": {
