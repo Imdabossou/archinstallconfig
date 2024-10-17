@@ -8,9 +8,6 @@ yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-e
 sudo systemctl enable libvirtd
 # Printer services
 sudo systemctl enable cups.service
-# Download monitor ICM profile
-cd ~/Documents/
-curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
 # Apply Nvidia fixes
 cd /etc/modprobe.d/
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/nvidiadesktop.conf
