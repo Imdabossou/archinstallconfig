@@ -34,11 +34,6 @@ yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin zapzap
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
 sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
-# Virtual 5.1 Upmix Audio
-sudo mkdir /usr/share/pipewire/pipewire.conf.d/
-cd /usr/share/pipewire/pipewire.conf.d/
-sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/refs/heads/main/desktop/25-sink-upmix-5.1.conf
-systemctl --user restart pipewire.service
 # Timeshift Config
 cd /etc/timeshift
 sudo rm /etc/timeshift/default.json
