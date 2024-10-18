@@ -14,10 +14,10 @@ sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main
 # Apply SDDM Wayland
 sudo mkdir /etc/sddm.conf.d/
 cd /etc/sddm.conf.d/
-sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/10-wayland.conf
+sudo curl -O https://github.com/imdabossou/archinstallconfig/raw/main/laptop/10-wayland.conf
 # Konsave KDE config import - if wallpaper and icon does not apply, they are located in ~/.local/share/wallpapers and ~/.local/share/icons
 cd ~/
-curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/arch.knsv
+curl -O https://github.com/imdabossou/archinstallconfig/raw/main/laptop/arch.knsv
 konsave -i arch.knsv
 konsave -a arch
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
@@ -29,7 +29,7 @@ sudo sed -i 's/consolefont//g' /etc/mkinitcpio.conf
 # Timeshift Config
 cd /etc/timeshift
 sudo rm /etc/timeshift/default.json
-sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
+sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/laptop/default.json
 sudo timeshift --btrfs
 sudo systemctl enable cronie
 sudo timeshift --check
