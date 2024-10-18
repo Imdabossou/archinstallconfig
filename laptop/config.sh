@@ -10,7 +10,7 @@ sudo systemctl enable libvirtd
 sudo systemctl enable cups.service
 # Apply Nvidia fixes
 cd /etc/modprobe.d/
-sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/nvidiadesktop.conf
+sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/laptop/nvidialaptop.conf
 # Apply SDDM Wayland
 sudo mkdir /etc/sddm.conf.d/
 cd /etc/sddm.conf.d/
