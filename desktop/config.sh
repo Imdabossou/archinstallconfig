@@ -45,8 +45,8 @@ systemctl --user restart pipewire.service
 cd /etc/timeshift
 sudo rm /etc/timeshift/default.json
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/default.json
-sudo timeshift --btrfs
 sudo systemctl enable cronie
+sudo timeshift --btrfs
 sudo timeshift --check
 # AutoUpdate
 curl --silent https://raw.githubusercontent.com/cmuench/pacman-auto-update/master/install.sh | bash
