@@ -155,7 +155,8 @@
         "system-config-printer",
         "timeshift",
         "virt-manager",
-        "cronie"
+        "cronie",
+        "ntfs-3g"
     ],
     "parallel downloads": 5,
     "profile_config": {
