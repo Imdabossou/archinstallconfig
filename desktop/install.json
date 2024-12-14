@@ -156,7 +156,8 @@
         "timeshift",
         "virt-manager",
         "cronie",
-        "ntfs-3g"
+        "ntfs-3g",
+        "bluez-utils"
     ],
     "parallel downloads": 5,
     "profile_config": {
