@@ -28,6 +28,9 @@ mkdir ~/.config/OpenRGB/
 cd ~/.config/OpenRGB/
 curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/OpenRGB.json
 curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desktop/Profile.orp
+# Bluetooth
+sudo modprobe btusb
+sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
 yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin zapzap
 # Bolt launcher fix
