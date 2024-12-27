@@ -157,7 +157,8 @@
         "virt-manager",
         "cronie",
         "ntfs-3g",
-        "bluez-utils"
+        "bluez-utils",
+        "dosfstools"
     ],
     "parallel downloads": 5,
     "profile_config": {
