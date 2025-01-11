@@ -3,7 +3,7 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
-yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 jamesdsp downgrade
+yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 # Printer services
