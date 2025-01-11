@@ -30,8 +30,6 @@ sudo modprobe btusb
 sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
 yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin zapzap
-# Bolt launcher fix
-yes | sudo pacman -S openssl-1.1 lib32-gtk2
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
