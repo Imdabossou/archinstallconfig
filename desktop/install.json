@@ -156,6 +156,8 @@
         "ntfs-3g",
         "bluez-utils",
         "dosfstools"
+        "openssl-1.1",
+        "lib32-gtk2"
     ],
     "parallel downloads": 5,
     "profile_config": {
