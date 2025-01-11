@@ -101,7 +101,7 @@
             }
         ]
     },
-    "hostname": "archlinux",
+    "hostname": "archdesktop",
     "kernels": [
         "linux"
     ],
