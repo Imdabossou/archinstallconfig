@@ -142,11 +142,7 @@
         "libreoffice-fresh",
         "liquidctl",
         "man-db",
-        "nvidia",
-        "nvidia-settings",
-        "nvidia-utils",
         "nvtop",
-        "openrgb",
         "piper",
         "power-profiles-daemon",
         "powertop",
@@ -156,7 +152,15 @@
         "system-config-printer",
         "timeshift",
         "virt-manager",
-        "gwenview"
+        "cronie",
+        "ntfs-3g",
+        "bluez-utils",
+        "dosfstools",
+        "openssl-1.1",
+        "lib32-gtk2",
+        "nvidia",
+        "nvidia-settings",
+        "nvidia-utils"
     ],
     "parallel downloads": 5,
     "profile_config": {
