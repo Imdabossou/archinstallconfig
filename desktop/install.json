@@ -155,7 +155,7 @@
         "cronie",
         "ntfs-3g",
         "bluez-utils",
-        "dosfstools"
+        "dosfstools",
         "openssl-1.1",
         "lib32-gtk2"
     ],
