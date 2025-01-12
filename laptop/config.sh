@@ -11,6 +11,7 @@ sudo systemctl enable cups.service
 # Apply Nvidia fixes
 cd /etc/modprobe.d/
 sudo curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/laptop/nvidialaptop.conf
+sudo systemctl enable --now nvidia-powerd.service 
 # Apply SDDM Wayland
 sudo mkdir /etc/sddm.conf.d/
 cd /etc/sddm.conf.d/
