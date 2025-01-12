@@ -8,6 +8,8 @@ yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-e
 sudo systemctl enable libvirtd
 # Printer services
 sudo systemctl enable cups.service
+# Power profiles daemon
+sudo systemctl enable --now power-profiles-daemon
 # Download monitor ICM profile
 cd ~/Documents/
 curl -O https://github.com/imdabossou/archinstallconfig/raw/main/desktop/EX240N.icm
