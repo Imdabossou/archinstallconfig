@@ -157,7 +157,8 @@
         "bluez-utils",
         "dosfstools",
         "openssl-1.1",
-        "lib32-gtk2"
+        "lib32-gtk2",
+        "freecad"
     ],
     "parallel downloads": 5,
     "profile_config": {
