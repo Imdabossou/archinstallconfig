@@ -138,6 +138,7 @@
         "ksystemlog",
         "ktorrent",
         "kwalletmanager",
+        "kaccounts-providers",
         "libreoffice-fresh",
         "liquidctl",
         "man-db",
