@@ -159,7 +159,8 @@
         "dosfstools",
         "openssl-1.1",
         "lib32-gtk2",
-        "freecad"
+        "freecad",
+        "rocm-opencl-runtime"
     ],
     "parallel downloads": 5,
     "profile_config": {
