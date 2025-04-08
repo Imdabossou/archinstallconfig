@@ -3,7 +3,7 @@ cd ~
 # Install Yay
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
-yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd
+yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd xpadneo
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 # Printer services
@@ -31,7 +31,7 @@ curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desk
 sudo modprobe btusb
 sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
-yes | yay -S bolt-launcher bambustudio-bin protonup-qt vesktop-bin zapzap
+yes | yay -S bolt-launcher bambustudio-bin protonup-qt zapzap
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
