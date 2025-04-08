@@ -5,7 +5,7 @@ yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.
 # Install required packages from Yay
 # Xpadneo seems to be required to fix xbox controller as triggers dont work on default drivers
 yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd xpadneo-dkms
-# xpadneo may be required as triggers occasionally dont work on default drivers although xpadneo seems to break battery reporting
+# xpadneo may be required as triggers occasionally dont work on default drivers although xpadneo seems to break battery reporting? Test out battery levels to see if under 100% is reported
 # QEMU virtualization services
 sudo systemctl enable libvirtd
 # Printer services
