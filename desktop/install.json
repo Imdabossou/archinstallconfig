@@ -155,6 +155,7 @@
         "virt-manager",
         "cronie",
         "ntfs-3g",
+        "bluez",
         "bluez-utils",
         "dosfstools",
         "openssl-1.1",
