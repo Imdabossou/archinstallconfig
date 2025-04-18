@@ -33,7 +33,9 @@ curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desk
 sudo modprobe btusb
 sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
-yes | yay -S bolt-launcher bambustudio-bin protonup-qt whatsapp-for-linux zapzap
+yes | yay -S bolt-launcher bambustudio-bin protonup-qt zapzap
+# TEMPORARY alternative whatsapp launcher due to qt bug breaking zapzap
+yes | yay -S whatsapp-for-linux
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
