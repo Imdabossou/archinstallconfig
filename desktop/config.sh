@@ -4,7 +4,7 @@ cd ~
 yes | sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 # Install required packages from Yay
 # Xpadneo seems to be required to fix xbox controller as triggers dont work on default drivers
-yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd xpadneo-dkms
+yes | yay -S partitionmanager mkinitcpio-firmware konsave epson-inkjet-printer-escpr2 opencl-amd xpadneo-dkms protonup-qt-bin
 # xpadneo may be required as triggers occasionally dont work on default drivers although xpadneo seems to break battery reporting? Test out battery levels to see if under 100% is reported
 # QEMU virtualization services
 sudo systemctl enable libvirtd
@@ -33,7 +33,7 @@ curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desk
 sudo modprobe btusb
 sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
-yes | yay -S bolt-launcher bambustudio-bin protonup-qt zapzap
+yes | yay -S bolt-launcher bambustudio-bin zapzap
 # TEMPORARY alternative whatsapp launcher due to qt bug breaking zapzap
 yes | yay -S whatsapp-for-linux
 # Remove subvolid on btrfs mounts as it breaks restores
