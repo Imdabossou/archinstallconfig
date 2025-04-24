@@ -34,8 +34,7 @@ sudo modprobe btusb
 sudo systemctl enable bluetooth
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
 yes | yay -S bolt-launcher bambustudio-bin zapzap
-# TEMPORARY alternative whatsapp launcher due to qt bug breaking zapzap
-yes | yay -S whatsapp-for-linux
+# Note - QT broken currently on a few apps. QTWEBENGINE_FORCE_USE_GBM=0 as enviroment variable required for Kmail & ZapZap
 # Remove subvolid on btrfs mounts as it breaks restores
 sudo sed -i '/subvolid=[0-9]*/s/subvolid=[0-9]*,//g' /etc/fstab
 # Remove consolefont hook to stop error for missing config
