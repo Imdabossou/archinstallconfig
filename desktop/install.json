@@ -162,7 +162,8 @@
         "openssl-1.1",
         "lib32-gtk2",
         "freecad",
-        "openscad"
+        "openscad",
+        "aichat"
     ],
     "parallel downloads": 5,
     "profile_config": {
