@@ -163,7 +163,8 @@
         "lib32-gtk2",
         "freecad",
         "openscad",
-        "aichat"
+        "aichat",
+        "prismlauncher"
     ],
     "parallel downloads": 5,
     "profile_config": {
