@@ -167,7 +167,8 @@
         "aichat",
         "prismlauncher",
         "vlc",
-        "vlc-plugins-all"
+        "vlc-plugins-all",
+        "partitionmanager"
     ],
     "parallel downloads": 5,
     "profile_config": {
