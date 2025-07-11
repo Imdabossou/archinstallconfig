@@ -165,7 +165,9 @@
         "freecad",
         "openscad",
         "aichat",
-        "prismlauncher"
+        "prismlauncher",
+        "vlc",
+        "vlc-plugins-all"
     ],
     "parallel downloads": 5,
     "profile_config": {
