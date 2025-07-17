@@ -168,7 +168,8 @@
         "prismlauncher",
         "vlc",
         "vlc-plugins-all",
-        "partitionmanager"
+        "partitionmanager",
+        "audacity"
     ],
     "parallel downloads": 5,
     "profile_config": {
