@@ -169,7 +169,8 @@
         "vlc",
         "vlc-plugins-all",
         "partitionmanager",
-        "audacity"
+        "audacity",
+        "fastfetch"
     ],
     "parallel downloads": 5,
     "profile_config": {
