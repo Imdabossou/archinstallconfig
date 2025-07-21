@@ -32,6 +32,8 @@ curl -O https://raw.githubusercontent.com/imdabossou/archinstallconfig/main/desk
 # Bluetooth
 sudo modprobe btusb
 sudo systemctl enable bluetooth
+# Motherboard Sensors
+sudo modprobe nct6775
 # Install slower packages from Yay (separated so it can be commented out for quicker testing runs of script)
 yes | yay -S bolt-launcher bambustudio-bin zapzap
 # Note - QT broken currently on a few apps. QTWEBENGINE_FORCE_USE_GBM=0 as enviroment variable required for Kmail & ZapZap
